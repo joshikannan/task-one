@@ -1,0 +1,60 @@
+.status {
+  width: 100%; /* Adjust the width as needed */
+  height: 500px; /* Adjust the height as needed */
+  background-size: cover; /* This will make the background image cover the entire div */
+  background-position: center; /* Center the background image */
+  /* Add any other styles you want for the div */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* z-index: -1; */
+  border: 2px solid grey;
+}
+
+.status-card {
+  /* z-index: 1; */
+  /* background-color: red; */
+  width: 80%;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.status-card-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-card-1 img {
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+@media screen and (max-width: 750px) {
+  .status {
+    height: 1100px;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    padding: 50px 40px;
+  }
+  .status-card {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+  .status-card-1 {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .status {
+    height: 1500px;
+    text-align: center;
+  }
+  .status-card {
+    grid-template-columns: 1fr;
+  }
+}

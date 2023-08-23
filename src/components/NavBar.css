@@ -1,0 +1,57 @@
+.navText {
+  color: white;
+}
+.custom-dropdown-title {
+  color: red;
+}
+
+#basic-nav-dropdown {
+  color: white;
+}
+#basic-nav-dropdown:hover {
+  color: #00a85a;
+  text-decoration: underline;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
+.dropdown-divider {
+  border-top: 1px solid #dee2e6; /* Adjust color and style as needed */
+  margin: 0.5rem 0;
+}
+.custom-dropdown-toggle {
+  color: red;
+  background: none;
+  border: none;
+}
+
+/* @media (max-width: 768px) {
+  NavDropDown {
+    color: #00a85a;
+  }
+} */
+
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-nav {
+    background-color: grey;
+    z-index: 100;
+    width: 100%; /* Stretch background across full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items at the start */
+  }
+  /* Change background color of nav links and dropdowns to grey */
+  .nav-link,
+  .dropdown-item {
+    background-color: grey;
+    z-index: 100;
+  }
+  .dropdown-menu {
+    background-color: grey;
+    z-index: 100;
+  }
+}

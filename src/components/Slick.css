@@ -1,0 +1,17 @@
+.slick {
+  width: 80%;
+  margin: 10%;
+  display: grid;
+  margin-top: 5%;
+  background-color: rgb(238, 238, 238);
+  align-items: start;
+  justify-content: start;
+  padding: 30px;
+}
+.slick-image {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.slick-image img {
+  padding: 20px;
+}

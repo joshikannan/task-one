@@ -1,0 +1,40 @@
+.exploreCards {
+  width: 90%;
+  margin: 5%;
+}
+.exploreCards h1 {
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.mi-card {
+  width: 250px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  z-index: 1;
+}
+.mi-image {
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  transform-origin: center center;
+}
+.mi-image:hover {
+  transform: scale(1.1);
+}
+.explore-btn {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin: 20px;
+}
+@media screen and (max-width: 728px) {
+  .mi-card {
+    margin: auto;
+    width: 300px;
+  }
+}

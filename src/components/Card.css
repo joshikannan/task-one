@@ -1,0 +1,31 @@
+.card {
+  /* background-color: green; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: 20px;
+  margin-right: 70px; */
+}
+.card-0 {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.card-0 img {
+  width: 60px;
+  height: 60px;
+}
+.card-text h3 {
+  color: #1a3067;
+}
+@media screen and (max-width: 800px) {
+  .card {
+    grid-template-columns: 1fr;
+    z-index: -1;
+  }
+  .card-0 img {
+    margin-left: 90px;
+    margin-right: 50px;
+  }
+}

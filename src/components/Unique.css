@@ -1,0 +1,130 @@
+.unique {
+  width: 80%;
+  height: auto;
+  margin: 5% 10%;
+  display: grid;
+  grid-template-columns: auto;
+
+  grid-gap: 20px;
+}
+.uni-row {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.uni-col {
+  /* background-color: rgb(184, 184, 184); */
+}
+.uni-col h1 {
+  color: var(--blue);
+}
+.uni-col-1-1 {
+  padding-bottom: 50px;
+}
+.uni-col-1-1 p {
+  padding: 20px 0 20px 0;
+}
+.uni-col-2-2 p {
+  padding: 20px 0 20px 0;
+}
+.uni-col-1-2 {
+  display: grid;
+  place-items: center;
+}
+.uni-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin: 20px;
+  margin-top: 80px;
+}
+.uni-card {
+  background-color: var(--blue);
+  padding: 10px;
+  border-radius: 10px;
+}
+.uni-card h4 {
+  color: var(--green);
+}
+.uni-card p {
+  color: white;
+}
+.uni-icons {
+  background-color: transparent;
+  width: 50px;
+  margin: 0;
+  padding: 20px 0 20px 0;
+}
+/* ******************************************************************** */
+.uni-row-2 {
+  padding-top: 50px;
+}
+.uni-col-2-1 {
+  display: grid;
+  margin-left: -200px;
+}
+/* ******************************************************************** */
+.uni-row-3 {
+  margin-top: 40px;
+  text-align: justify;
+  line-height: 1.5;
+  display: grid;
+  grid-gap: 40px;
+}
+.uni-image-3 {
+  margin-top: 30px;
+  margin-left: -100px;
+}
+.uni-col-3-2 h3 {
+  font-weight: bolder;
+}
+.uni-col-3-1 p {
+  padding: 20px 0;
+}
+.uni-icons-row {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-bottom: 30px;
+  grid-gap: 20px;
+}
+.uni-icons-col {
+  margin: 0;
+}
+
+/* ******************************************************************** */
+@media (max-width: 768px) {
+  .uni-row {
+    grid-template-columns: auto;
+  }
+  .uni-cards {
+    grid-template-columns: auto;
+  }
+  .uni-col-1-1 {
+    display: grid;
+    place-items: center;
+  }
+  .uni-col-1-1 br {
+    display: none;
+  }
+  .uni-col-2-1 {
+    display: grid;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .uni-col-2-2 {
+    display: grid;
+    place-items: center;
+  }
+  .uni-row-2 {
+    padding-top: 20px;
+  }
+  .uni-image-3 {
+    margin-left: auto;
+  }
+  .uni-col-3-1 {
+    display: grid;
+    place-items: center;
+  }
+}
